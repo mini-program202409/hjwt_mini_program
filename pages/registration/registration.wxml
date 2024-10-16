@@ -1,0 +1,56 @@
+<view class="container">
+  <view class="title-wrapper">
+    <text class="title">赛事报名</text>
+  </view>
+  <form class="form" bindsubmit="onSubmit">
+    <view class="form-item">
+      <text>姓名:</text>
+      <input class="form-input" placeholder="请输入姓名" name="username" required />
+    </view>
+    <view class="form-item">
+      <text>身份证号:</text>
+      <input class="form-input" placeholder="请输入身份证号" name="idNumber" required />
+    </view>
+    <view class="form-item">
+      <text>性别:</text>
+      <picker mode="selector" range="{{genders}}" bindchange="onGenderChange">
+        <view class="picker">{{selectedGender || '请选择性别'}}</view>
+      </picker>
+    </view>
+    <view class="form-item">
+      <text>年龄:</text>
+      <input class="form-input" placeholder="请输入年龄" name="age" type="number" required />
+    </view>
+    <view class="form-item">
+      <text>学校/单位:</text>
+      <input class="form-input" placeholder="请输入学校或单位" name="institution" required />
+    </view>
+    <view class="form-item">
+      <text>手机:</text>
+      <input class="form-input" placeholder="请输入手机号码" name="phone" type="number" required />
+    </view>
+    <view class="form-item">
+      <text>证件照:</text>
+      <button bindtap="chooseAvatar">上传证件照</button>
+    </view>
+    <view class="form-item">
+      <text>赛事:</text>
+      <picker mode="selector" range="{{events}}" bindchange="onEventChange">
+        <view class="picker">{{selectedEvent || '请选择赛事'}}</view>
+      </picker>
+    </view>
+    <view class="form-item">
+      <text>分组:</text>
+      <picker mode="selector" range="{{groups}}" bindchange="onGroupChange">
+        <view class="picker">{{selectedGroup || '请选择分组'}}</view>
+      </picker>
+    </view>
+    <view class="form-item">
+      <text>角色:</text>
+      <picker mode="selector" range="{{roles}}" bindchange="onRoleChange">
+        <view class="picker">{{selectedRole || '请选择角色'}}</view>
+      </picker>
+    </view>
+    <button class="submit-btn" formType="submit">提交报名</button>
+  </form>
+</view>

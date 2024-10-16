@@ -1,0 +1,5 @@
+<view class="container">
+  <!-- 按钮容器 -->
+  <button class="button" bindtap="navigateToRegistration">赛事报名</button>
+  <button class="button" bindtap="navigateToDownload">赛事文件</button>
+</view>

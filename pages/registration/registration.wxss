@@ -1,0 +1,65 @@
+/* 样式文件 */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f8ff; 
+}
+
+.title-wrapper {
+  margin-bottom: 20px;
+}
+
+.title {
+  font-family: "Hiragino Sans GB", "Arial", sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  background: linear-gradient(90deg, #3a8dff, #005bac);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: fadeInUp 1.5s ease-in-out forwards;
+}
+
+.form-item {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.label {
+  font-size: 18px;
+  color: #333;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #888;
+  border-radius: 6px;
+  background-color: #fff;
+}
+
+.radio-group {
+  display: flex;
+  gap: 20px;
+}
+
+.upload-btn {
+  padding: 10px;
+  background-color: #3a8dff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+}
+
+.submit-btn {
+  margin-top: 20px;
+  padding: 12px;
+  background: linear-gradient(135deg, #3a8dff, #005bac);
+  color: white;
+  font-size: 18px;
+  border-radius: 25px;
+  width: 100%;
+}

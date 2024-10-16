@@ -1,0 +1,45 @@
+{
+	"pages": [
+		"pages/home/home",
+		"pages/competition/competition",
+		"pages/registration/registration",
+		"pages/competition_document/competition_document",
+		"pages/me/me",
+		"pages/my_competition/my_competition"
+	],
+	"window": {
+		"navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/competition/competition",
+        "text": "赛事",
+        "iconPath": "images/competition.png",
+        "selectedIconPath": "images/competition_selected.png"
+      },
+      {
+        "pagePath": "pages/home/home",
+        "text": "主页",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home_selected.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "images/me.png",
+        "selectedIconPath": "images/me_selected.png"
+      }
+    ],
+    "color": "#000000",
+    "selectedColor": "#1296db",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black"
+  },
+	"useExtendedLib": {
+		"weui": true
+	},
+	"style": "v2",
+	"sitemapLocation": "sitemap.json",
+	"lazyCodeLoading": "requiredComponents"
+}

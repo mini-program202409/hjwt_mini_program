@@ -1,0 +1,13 @@
+<view class="container">
+  <view class="title-wrapper">
+    <text class="title">已报名赛事</text>
+  </view>
+  
+  <!-- 已报名赛事列表 -->
+  <block wx:for="{{registeredEvents}}" wx:key="id">
+    <view class="competition-item" bindtap="viewEventDetails" data-id="{{item.id}}">
+      <text>{{item.eventName}}</text> - <text>{{item.groupName}}</text>
+      <button class="delete-btn" data-id="{{item.id}}" bindtap="deleteEvent">删除</button>
+    </view>
+  </block>
+</view>
