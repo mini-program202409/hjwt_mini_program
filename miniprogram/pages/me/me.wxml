@@ -4,9 +4,9 @@
   </view>
   
   <!-- 已报名赛事列表 -->
-  <block wx:for="{{registeredEvents}}" wx:key="id">
-    <view class="competition-item" bindtap="viewEventDetails" data-id="{{item.id}}">
-      <text>{{item.eventName}}</text> - <text>{{item.groupName}}</text>
+  <block wx:for="{{registeredTournaments}}" wx:key="_id">
+    <view class="competition-item" bindtap="viewEventDetails" data-item="{{item}}">
+      <view class="info">{{item.id}} - {{item.tournament}} - {{item.group}}</view>
       <button class="delete-btn" data-id="{{item.id}}" bindtap="deleteEvent">删除</button>
     </view>
   </block>
